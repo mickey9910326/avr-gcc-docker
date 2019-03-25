@@ -39,3 +39,10 @@ RUN apk add --no-cache openssl bash git gcc g++ libc-dev gmp-dev mpfr-dev mpc1-d
 && make -j${NPROC} && make install && cd ../.. \
 && rm -rf /tmp/distr \
 && apk del openssl libc-dev gmp-dev mpfr-dev mpc1-dev
+#
+# Python
+#
+&& apk add --update python3
+&& alias py=python3
+&& alias python=python3
+
