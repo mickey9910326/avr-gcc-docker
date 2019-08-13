@@ -44,5 +44,6 @@ RUN apk add --no-cache openssl bash git gcc g++ libc-dev gmp-dev mpfr-dev mpc1-d
 #
 && apk add --update python3 \
 && alias py=python3 \
-&& alias python=python3
+&& alias python=python3 \
+&& apk add --no-cache curl
 
