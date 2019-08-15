@@ -48,7 +48,7 @@ RUN apk add --no-cache openssl bash git gcc g++ libc-dev gmp-dev mpfr-dev mpc1-d
 #
 # Install python module
 #
-&& python3 -m pip install requests
+&& python3 -m pip install requests \
 #
 # Install python module
 #
